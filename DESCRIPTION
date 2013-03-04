@@ -16,3 +16,4 @@ Collate:
     'print.R'
     'sumsOfRVs.R'
     'makerv.R'
+    'makeJointRV.R'
