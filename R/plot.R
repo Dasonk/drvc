@@ -3,7 +3,7 @@
 #' 
 #' Plot a random variable of class "RV"
 #' 
-#' @param X A random variable
+#' @param x A random variable
 #' @param ... Additional arguments to be passed to the "plot" function
 #' @param pch Either an integer specifying a symbol or a single character to be used as the default in plotting points.
 #' @param cex A numerical value giving the amount by which plotting text and symbols should be magnified relative to the default.
@@ -23,16 +23,16 @@
 #' @examples
 #' fair.die <- make.RV(1:6, rep(1/6, 6))
 #' plot(fair.die)
-plot.RV <- function(X, pch = 16, cex = 1.2, lwd = 2, col="black",
+plot.RV <- function(x, ..., 
+                    pch = 16, cex = 1.2, lwd = 2, col="black",
                     stretch.x = 1.2, stretch.y = 1.2,
                     xlab = "x",
                     ylab = "P(X = x)", 
                     xlim = NULL,
                     ylim = NULL, 
-                    expected = TRUE,
-                    ...){
-    
-    x <- as.numeric(X)
+                    expected = TRUE){
+    X <- x
+    x <- as.numeric(x)
     ps <- probs(X)
     
     if(is.null(xlim)){

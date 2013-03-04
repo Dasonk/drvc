@@ -2,13 +2,13 @@
 \alias{plot.RV}
 \title{Plot a RV}
 \usage{
-  \method{plot}{RV} (X, pch = 16, cex = 1.2, lwd = 2,
+  \method{plot}{RV} (x, ..., pch = 16, cex = 1.2, lwd = 2,
     col = "black", stretch.x = 1.2, stretch.y = 1.2,
     xlab = "x", ylab = "P(X = x)", xlim = NULL,
-    ylim = NULL, expected = TRUE, ...)
+    ylim = NULL, expected = TRUE)
 }
 \arguments{
-  \item{X}{A random variable}
+  \item{x}{A random variable}
 
   \item{...}{Additional arguments to be passed to the
   "plot" function}
