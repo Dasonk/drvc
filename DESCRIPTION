@@ -1,0 +1,18 @@
+Package: drvc
+Type: Package
+Title: Discrete Random Variables Computations
+Version: 1.0
+Date: 2013-03-03
+Author: Dason Kurkiewicz (rewrote most of code base) and Andreas Buja (original
+    author)
+Maintainer: Dason Kurkiewicz <dasonk@iastate.edu>
+Description: Allows one to easily create and operate on
+    simple finite discrete random variables.
+License: GPL-3
+Collate:
+    'comparisons.R'
+    'operators.R'
+    'plot.R'
+    'print.R'
+    'sumsOfRVs.R'
+    'makerv.R'
