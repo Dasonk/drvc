@@ -53,6 +53,7 @@ V <- Var
 #' Standard deviation of a random variable
 #' 
 #' @param X A random variable
+#' @export
 Sd <- function(X){
     if(!is.RV(X)){
         stop("Input to Sd must be a random variable")
