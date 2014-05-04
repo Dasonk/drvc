@@ -11,7 +11,6 @@
 #' @method print RV
 #' @S3method print RV
 print.RV <- function(x, ..., digits = 4){
-    #TODO: Set a default digits...
     print.data.frame(data.frame(x = values(x), 
                                 "P(X=x)" = probs(x), 
                                 check.names = FALSE), 
